@@ -1,0 +1,539 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  html {
+    position: relative;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* ========================
+  Global
+  ======================== */
+  
+  body {
+    font-family:'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  p {
+    line-height: 1.8rem;
+  }
+  
+
+  
+  /* ========================
+  Containers
+  ======================== */
+  
+  .container-fluid {
+    padding: 0 1em;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 996px;
+  }
+  
+
+  /* ========================
+  Sections
+  ======================== */
+  
+  .splash {
+    background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(20, 29, 36, 0.65)),
+                  url("../img/pc-code.jpg") no-repeat fixed center;
+      background-size: cover;
+      color: #fff;
+  }
+  
+  .splash .container {
+    padding-top: 30vh; /* No JS fallback*/
+    padding-bottom: 30vh; /* No JS fallback*/
+  }
+
+  
+  .splash h1 {
+    font-size: 4em;
+    margin-bottom: .15em;
+    text-align: center;
+  }
+  
+  .splash .lead, .splash .continue {
+    display: block;
+    text-align: center;
+  }
+  
+  .splash .lead {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 1em;
+  }
+  
+  .splash .continue {
+    font-size: 2em;
+  }
+  
+  .splash .continue a {
+    border: 1px solid #fff;
+    border-radius: 10%;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    width: 60px;
+  }
+  .splash .continue a:hover {
+    background-color: rgba(255, 255, 255, .25);
+  }
+
+/* nav1 */
+
+#top-nav { /* centrar icons y text */
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+	#top-nav a {
+    text-align: center;
+    color: white;
+    min-width: 100px;
+    text-decoration: none;
+    padding-bottom: 80px;
+	}
+
+	#top-nav a:hover,
+	#top-nav a:active,
+	#top-nav a:focus {
+	}
+
+	#top-nav a:hover .bb-animate {
+		background: #edf5f5;
+		width: 100%;
+	}
+
+
+	.bb-animate {
+		display: block;
+		height: 1px;
+		width: 0;
+		background: rgba(255,255,255,0);
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+
+
+/* fin nav1 */
+
+  
+/* section à propos */
+
+  .intro .container, .features .container, .portfolio .container, .contact .container {
+    padding: 5em 1em;
+  }
+  
+  .intro, .contact {
+    text-align: center;
+  }
+  
+  .intro {
+    background-color: rgba(29, 28, 28, 0.822);
+    color: #fff;
+  }
+  
+  .intro a, .intro a:hover, .intro a:focus, .intro a:active, .intro a:visited {
+    color: #fff;
+  }
+  #about h2{
+    margin-bottom: 2em;
+    }
+
+
+/* Competences technologiques */
+
+.tech h2 {
+  color: #232323;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+.box1 {
+  width: 70%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.box{
+  width: 90%;
+  padding: 40px;
+  background: #1a1918;
+  box-shadow: 0 0 30px rgba(0,0,0,9);
+  color: white;
+  border-radius: 9px;
+  margin: auto;
+  font-size: 16px;
+}
+
+.progress {
+  width: 100%;
+  background-color: rgba(151, 150, 151, 0.753);
+  border-radius: 10px;
+  margin: 18px 0px;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: rgba(111, 13, 131, 0.774);
+  border-radius: 10px;
+  position: relative;
+  transition: all 1.5s;
+}
+
+.progress-bar span {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+
+
+/* fin competences technologiques */
+
+/* competencias metier */
+
+.metier {
+  width: 100%;
+  background: -webkit-linear-gradient(left, #4b3164, #1d1e47);
+  margin: auto;
+
+}
+
+.metier h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.metier h3 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: oblique;
+  padding-top: 10px;
+}
+
+.wrapper1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 20px;
+  width: 100%;
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.wrapper .card{
+  background: rgb(247, 244, 244);
+  width: calc(23% - 18px);
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.7);
+
+}
+.wrapper .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+}
+.card .circle .bix,
+.card .circle .bix span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.card .circle .bix{
+  height: 100%;
+  width: 100%;
+  background: rgb(238, 236, 236);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .bix{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .bix span,
+.wrapper .card .text{
+  background: -webkit-linear-gradient(left, #904ad1, #1d1e47);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle .bix span{
+  font-size: 36px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .bix span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+@media(max-width: 753px){
+  .wrapper{
+    max-width: 700px;
+  }
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .wrapper{
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
+}
+
+
+.metier1 {
+  width: 100%;
+  background: -webkit-linear-gradient(left, #4b3164, #1d1e47);
+  margin: auto;
+
+}
+
+.metier1 h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  padding-top: 50px;
+}
+
+.metier1 h3 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 22px;
+  font-style: oblique;
+  padding-top: 20px;
+}
+
+
+/* fin competencias metier */
+
+#contact {
+  background-color: rgba(29, 28, 28, 0.822);
+}
+
+#contact h2{
+margin-bottom: 2em;
+}
+  .contact form {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    border-top: 10px solid #591d91;
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    padding: 1em;
+  }
+  
+  .contact form input, .contact form textarea {
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 100%;
+  }
+  
+  .contact form textarea {
+    height: 6em;
+  }
+  
+  .contact form input[type="submit"] {
+    background-color: #443f3f;
+    border-radius: 20px;
+    color: #fff;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  /* ========================
+  Footer
+  ======================== */
+  
+  .footer {
+    background-color: #4b3164;
+    color:  #fff;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .footer .container {
+    padding: 1em 0;
+  }
+  
+  .footer a {
+    color: #fff;
+    margin-right: 1em;
+  }
+  
+  .footer a:last-of-type {
+    margin-right: 0;
+  }
+  
+  /* ========================
+  Media Queries
+  ======================== */
+  
+  @media (min-width: 768px) {
+    
+    nav .nav-toggle {
+      display: none;
+    }
+    
+    nav ul {
+      border: none;
+      clear: none;
+      display: inline-block !important;
+      float: right;
+      margin: 0;
+      padding: 25px 0;
+    }
+    
+    nav ul li {
+      border: none;
+      display: inline-block;
+      float: left;
+      margin-right: 1.5em;
+    }
+    
+    nav ul li:last-of-type {
+      margin-right: 0;
+    }
+    
+    nav ul li a {
+      padding: 0;
+    }
+    
+    .splash h1 {
+      font-size: 4em;
+    }
+    
+    .splash .lead {
+      font-size: 2.5em;
+    }
+    
+    
+    .contact form {
+      padding: 3em 2em 2em;
+    }
+    
+    .contact form input[type="submit"] {
+      padding: 1em 3em;
+      width: auto;
+    }
+    
+    .contact form input.full-half {
+      float: left;
+      margin-right: 2.5%;
+      width: 48.75%;
+    }
+    
+    .contact form input.full-half:nth-of-type(2n) {
+      margin-right: 0;
+    }
+    
+    .contact form textarea {
+      height: 12em;
+    }
+    
+  }
+
+  /* Styles pour le button up */
+
+  #button {
+    display: inline-block;
+    background-color: #59345e;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 40px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
